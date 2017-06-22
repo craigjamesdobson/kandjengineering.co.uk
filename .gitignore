@@ -1,0 +1,4 @@
+#Git Ignores
+
+/node_modules
+/.vscode
