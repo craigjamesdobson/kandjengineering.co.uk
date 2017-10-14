@@ -1,10 +1,136 @@
 // Imports // 
 
-@import 'variables';
+@import 'variables.scss';
 
-// Navigation //
+// Hero Section //
 
-.top-bar {
-  padding: 20px;
-  background-color: $colour-steel;
+body {
+  font-family: 'Cormorant', serif;
+  font-size: 18px;
+  color: $colour-sand-dune;
+}
+
+.hero-section {
+  padding: 50px 0;
+  position: relative;
+  background-image: url('../images/hero-background.jpg');
+  background-size: cover;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $colour-sand-dune;
+    opacity: 0.6;
+  }
+
+  .navigation {
+    position: relative;
+    text-align: center;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+
+      li {
+        display: inline-block;
+
+        a {
+          font-size: 22px;
+          text-shadow: 2px 2px 5px #000;
+          color: #fff;
+          padding: 20px;
+        }
+      }
+    }
+  }
+
+  .logo {
+    position: relative;
+    text-align: center;
+
+    img {
+      width: 200px;
+      margin: 50px 0;
+    }
+
+
+      h1 {
+        font-family: 'Rouge Script', cursive;
+        font-size: 100px;
+        margin: auto;
+        color: #fff;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        padding: 20px 0;
+        text-shadow: 2px 2px 5px #000;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+
+      @include breakpoint(md) {
+        width: 50%;
+      }
+
+      span {
+        font-family: 'Cormorant', serif;
+        display: block;
+        font-size: 30px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+#intro-section {
+  padding: 100px 0;
+  text-align: center;
+  
+    h2 {
+      text-align: center;
+      padding-bottom: 10px;
+      margin-bottom: 50px;
+      display: inline-block;
+      font-size: 38px;
+      border-bottom: 2px solid $colour-sand-dune;
+    }
+  
+}
+
+#about-section {
+  position: relative;
+  background-image: url('../images/hero-background.jpg');
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+  background-color: $colour-soft-amber;
+  color: #fff;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $colour-sand-dune;
+    opacity: 0.8;
+  }
+  
+    h2 {
+      position: relative;
+      text-align: center;
+      padding-bottom: 10px;
+      margin-bottom: 50px;
+      display: inline-block;
+      font-size: 38px;
+      border-bottom: 2px solid #fff;
+    }
+
+    p {
+      position: relative;
+    }
+  
 }
