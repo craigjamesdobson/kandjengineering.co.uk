@@ -1,7 +1,7 @@
 body {
   font-family: 'Cormorant', serif;
   font-size: 18px;
-  color: #816D62;
+  color: #8A7969;
 }
 
 .hero-section {
@@ -18,7 +18,7 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #816D62;
+  background-color: #8A7969;
   opacity: 0.6;
 }
 
@@ -49,54 +49,42 @@ body {
 }
 
 .hero-section .logo img {
-  width: 200px;
-  margin: 50px 0;
+  width: 475px;
+  margin: 50px 0 25px 0;
 }
 
-.hero-section .logo h1 {
-  font-family: 'Rouge Script', cursive;
-  font-size: 100px;
+.hero-section .logo h3 {
+  font-family: 'Cormorant', serif;
+  width: 50%;
   margin: auto;
   color: #fff;
   margin-top: 20px;
   margin-bottom: 100px;
   padding: 20px 0;
   text-shadow: 2px 2px 5px #000;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-}
-
-@media (min-width: 992px) {
-  .hero-section .logo h1 {
-    width: 50%;
-  }
-}
-
-.hero-section .logo h1 span {
-  font-family: 'Cormorant', serif;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   display: block;
   font-size: 30px;
   margin-top: 10px;
 }
 
-#intro-section {
+#intro-section, #contact-section {
   padding: 100px 0;
   text-align: center;
 }
 
-#intro-section h2 {
+#intro-section h2, #contact-section h2 {
   text-align: center;
   padding-bottom: 10px;
   margin-bottom: 50px;
   display: inline-block;
   font-size: 38px;
-  border-bottom: 2px solid #816D62;
+  border-bottom: 2px solid #8A7969;
 }
 
 #about-section {
   position: relative;
-  background-image: url("../images/hero-background.jpg");
-  background-size: cover;
   padding: 100px 0;
   text-align: center;
   background-color: #CCC3B2;
@@ -110,7 +98,7 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #816D62;
+  background-color: #8A7969;
   opacity: 0.8;
 }
 
@@ -126,4 +114,13 @@ body {
 
 #about-section p {
   position: relative;
+}
+
+#footer-section {
+  background-color: #8A7969;
+}
+
+#footer-section p {
+  color: #fff;
+  margin: 10px 0;
 }
