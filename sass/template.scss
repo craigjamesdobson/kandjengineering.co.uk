@@ -1,9 +1,8 @@
 // Imports // 
-
-@import 'variables.scss';
-
+@import 'partials/_variables.scss';
+@import 'partials/_custom.scss';
+@import 'partials/_typography.scss';
 // Hero Section //
-
 body {
   font-family: 'Cormorant', serif;
   font-size: 18px;
@@ -15,7 +14,6 @@ body {
   position: relative;
   background-image: url('../images/hero-background.jpg');
   background-size: cover;
-
   &:before {
     content: '';
     position: absolute;
@@ -26,18 +24,14 @@ body {
     background-color: $colour-makara;
     opacity: 0.6;
   }
-
   .navigation {
     position: relative;
     text-align: center;
-
     ul {
       list-style-type: none;
       margin: 0;
-
       li {
         display: inline-block;
-
         a {
           font-size: 22px;
           text-shadow: 2px 2px 5px #000;
@@ -47,16 +41,13 @@ body {
       }
     }
   }
-
   .logo {
     position: relative;
     text-align: center;
-
     img {
       width: 475px;
       margin: 50px 0 25px 0;
     }
-
     h3 {
       font-family: 'Cormorant', serif;
       width: 50%;
@@ -71,32 +62,30 @@ body {
       display: block;
       font-size: 30px;
       margin-top: 10px;
-    }   
+    }
   }
 }
 
-#intro-section, #contact-section {
+#intro-section,
+#pricing-section {
   padding: 100px 0;
-  text-align: center;
-  
-    h2 {
-      text-align: center;
-      padding-bottom: 10px;
-      margin-bottom: 50px;
-      display: inline-block;
-      font-size: 38px;
-      border-bottom: 2px solid $colour-makara;
-    }
-  
+  h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    display: inline-block;
+    font-size: 38px;
+    border-bottom: 2px solid $colour-makara;
+  }
 }
 
-#about-section {
+#about-section,
+#contact-section {
   position: relative;
   padding: 100px 0;
   text-align: center;
   background-color: $colour-soft-amber;
   color: #fff;
-
   &:before {
     content: '';
     position: absolute;
@@ -107,27 +96,38 @@ body {
     background-color: $colour-makara;
     opacity: 0.8;
   }
-  
+  .container {
+    position: relative;
     h2 {
       position: relative;
       text-align: center;
       padding-bottom: 10px;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
       display: inline-block;
       font-size: 38px;
       border-bottom: 2px solid #fff;
     }
-
-    p {
-      position: relative;
+    h3 {
+      display: inline-block;
+      color: #fff;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
     }
-  
+  }
+}
+
+#pricing-section {
+
+  h3 {
+    color: $colour-makara;
+  }
+
 }
 
 #footer-section {
   background-color: $colour-makara;
-
-  p { 
+  p {
     color: #fff;
     margin: 10px 0;
   }
