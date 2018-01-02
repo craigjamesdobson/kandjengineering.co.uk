@@ -6,7 +6,7 @@ $colour-bermuda-gray: #7296AE;
 
 //Mixins
 
-@mixin breakpoint($class) {
+@mixin at($class) {
     @if $class == xs {
       @media (max-width: 767px) { @content; }
     }
