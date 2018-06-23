@@ -87,12 +87,12 @@ body {
 }
 
 #intro-section,
-#pricing-section {
+#about-section {
   padding: 100px 0;
 }
 
 #intro-section h2,
-#pricing-section h2 {
+#about-section h2 {
   text-align: center;
   padding-bottom: 10px;
   margin-bottom: 50px;
@@ -101,7 +101,8 @@ body {
   border-bottom: 2px solid #8A7969;
 }
 
-#about-section,
+#pricing-section,
+#benefits-section,
 #contact-section {
   position: relative;
   padding: 100px 0;
@@ -110,7 +111,8 @@ body {
   color: #fff;
 }
 
-#about-section:before,
+#pricing-section:before,
+#benefits-section:before,
 #contact-section:before {
   content: '';
   position: absolute;
@@ -122,12 +124,14 @@ body {
   opacity: 0.8;
 }
 
-#about-section .container,
+#pricing-section .container,
+#benefits-section .container,
 #contact-section .container {
   position: relative;
 }
 
-#about-section .container h2,
+#pricing-section .container h2,
+#benefits-section .container h2,
 #contact-section .container h2 {
   position: relative;
   text-align: center;
@@ -138,7 +142,8 @@ body {
   border-bottom: 2px solid #fff;
 }
 
-#about-section .container h3,
+#pricing-section .container h3,
+#benefits-section .container h3,
 #contact-section .container h3 {
   display: inline-block;
   color: #fff;

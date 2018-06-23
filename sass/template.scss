@@ -9,11 +9,24 @@ body {
   color: $colour-makara;
 }
 
+img {
+  margin-bottom: 20px;
+
+  @include at(sm) {
+    margin-bottom: 0;
+  }
+}
+
 .hero-section {
   padding: 50px 0;
   position: relative;
   background-image: url('../images/hero-background.jpg');
   background-size: cover;
+  background-position: 45% 100%;
+  
+  @include at(sm) {
+    background-position: center;
+  }
 
   &:before {
     content: '';
@@ -59,7 +72,6 @@ body {
       margin: auto;
       color: #fff;
       margin-top: 20px;
-      margin-bottom: 100px;
       padding: 20px 0;
       text-shadow: 2px 2px 5px #000;
       border-top: 1px solid #fff;
@@ -69,6 +81,10 @@ body {
       margin-top: 10px;
 
       @include at(sm) {
+        margin-bottom: 100px;
+      }
+
+      @include at(sm) {
         width: 50%;
       }
     }
@@ -76,8 +92,13 @@ body {
 }
 
 #intro-section,
-#pricing-section {
-  padding: 100px 0;
+#about-section,
+#contact-section {
+  padding: 50px 0;
+
+  @include at(sm) {
+    padding: 100px 0;
+  }
   h2 {
     text-align: center;
     padding-bottom: 10px;
@@ -88,13 +109,17 @@ body {
   }
 }
 
-#about-section,
-#contact-section {
+#pricing-section,
+#benefits-section {
   position: relative;
-  padding: 100px 0;
   text-align: center;
   background-color: $colour-soft-amber;
   color: #fff;
+  padding: 50px 0;
+
+  @include at(sm) {
+    padding: 100px 0;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -126,10 +151,16 @@ body {
   }
 }
 
+#benefits-section {
+  text-align: left;
+}
+
 #pricing-section {
+  text-align: left;
 
   h3 {
     color: $colour-makara;
+    text-align: center;
   }
 
 }
@@ -142,6 +173,7 @@ body {
     display: inline-block;
   }
   .facebook-link {
+    background-color: $colour-makara;
     float: right;
     line-height: 40px;
     img {
